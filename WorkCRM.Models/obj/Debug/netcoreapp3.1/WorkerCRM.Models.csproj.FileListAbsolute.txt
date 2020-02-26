@@ -6,3 +6,5 @@ C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\obj\Debug\netcoreapp3.1\W
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\bin\Debug\netcoreapp3.1\WorkerCRM.Models.pdb
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\obj\Debug\netcoreapp3.1\WorkerCRM.Models.dll
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\obj\Debug\netcoreapp3.1\WorkerCRM.Models.pdb
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\bin\Debug\netcoreapp3.1\WorkerCRM.Models.runtimeconfig.json
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\bin\Debug\netcoreapp3.1\WorkerCRM.Models.runtimeconfig.dev.json

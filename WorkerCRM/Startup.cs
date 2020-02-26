@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.EntityFrameworkCore
+using Microsoft.EntityFrameworkCore;
 using WorkerCRM.AutoMapper;
 using WorkerCRM.Common;
 using WorkerCRM.Data;
@@ -33,7 +33,7 @@ namespace WorkerCRM
         {
            
             services.AddDbContext<PlanersDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), x => x.MigrationsAssembly("WorkerCRM")));
 
             var mappingConfig = new MapperConfiguration(mc =>
             {

@@ -20,5 +20,6 @@ namespace WorkerCRM.Data
         }
 
         public DbSet<LogEntry> Logs { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

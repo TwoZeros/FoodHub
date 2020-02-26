@@ -9,3 +9,5 @@ C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\bin\Debug\netcor
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.csproj.CopyComplete
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.dll
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.pdb
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.runtimeconfig.json
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.runtimeconfig.dev.json

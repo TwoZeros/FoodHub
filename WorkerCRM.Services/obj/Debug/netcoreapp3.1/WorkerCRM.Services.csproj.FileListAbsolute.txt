@@ -17,3 +17,5 @@ C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services\bin\Debug\netcoreapp3
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services\obj\Debug\netcoreapp3.1\WorkerCRM.Services.csproj.CopyComplete
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services\obj\Debug\netcoreapp3.1\WorkerCRM.Services.dll
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services\obj\Debug\netcoreapp3.1\WorkerCRM.Services.pdb
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services\bin\Debug\netcoreapp3.1\WorkerCRM.Services.runtimeconfig.json
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services\bin\Debug\netcoreapp3.1\WorkerCRM.Services.runtimeconfig.dev.json

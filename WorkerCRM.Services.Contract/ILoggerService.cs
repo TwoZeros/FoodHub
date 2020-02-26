@@ -6,7 +6,7 @@ namespace WorkerCRM.Services.Contract
 {
     public interface ILoggerService
     {
-        void LogOrderSuccess(string name, string phone);
-        void LogOrderError(Exception e, string name, string phone);
+        void LogAboutSuccess(string message);
+        void LogAboutError(Exception e, string message);
     }
 }

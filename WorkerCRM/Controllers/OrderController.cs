@@ -30,7 +30,7 @@ namespace WorkerCRM.Controllers
         [HttpGet]
         public ActionResult Post()
         {
-            _logService.LogOrderSuccess("AS:F", "kjabdf");
+            _logService.LogAboutSuccess("Получил пост");
             return Ok("");
             //var dto = _mapper.MapFromModel(order);
             //string currentDatetime = DateTime.Now.ToString();
