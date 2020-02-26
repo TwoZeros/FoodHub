@@ -1,0 +1,8 @@
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\bin\Debug\netcoreapp3.1\WorkerCRM.Models.deps.json
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\bin\Debug\netcoreapp3.1\WorkerCRM.Models.dll
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\obj\Debug\netcoreapp3.1\WorkerCRM.Models.csprojAssemblyReference.cache
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\obj\Debug\netcoreapp3.1\WorkerCRM.Models.AssemblyInfoInputs.cache
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\obj\Debug\netcoreapp3.1\WorkerCRM.Models.AssemblyInfo.cs
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\bin\Debug\netcoreapp3.1\WorkerCRM.Models.pdb
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\obj\Debug\netcoreapp3.1\WorkerCRM.Models.dll
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkCRM.Models\obj\Debug\netcoreapp3.1\WorkerCRM.Models.pdb

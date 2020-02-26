@@ -1,0 +1,8 @@
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.deps.json
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.dll
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.csprojAssemblyReference.cache
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.AssemblyInfoInputs.cache
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.AssemblyInfo.cs
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.pdb
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.dll
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.pdb

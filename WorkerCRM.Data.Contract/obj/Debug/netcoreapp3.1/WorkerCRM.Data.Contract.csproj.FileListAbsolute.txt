@@ -1,0 +1,11 @@
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Models.dll
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.csprojAssemblyReference.cache
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.AssemblyInfoInputs.cache
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.AssemblyInfo.cs
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.deps.json
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.dll
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.pdb
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Models.pdb
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.csproj.CopyComplete
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.dll
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Data.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Data.Contract.pdb
