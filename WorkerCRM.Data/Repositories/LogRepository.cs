@@ -12,7 +12,7 @@ namespace WorkerCRM.Data.Repositories
 {
     public class LogRepository : BaseRepository<WorkerCRM.Models.LogEntry>, ILogRepository
     {
-        public LogRepository(PlanersDbContext context) : base(context)
+        public LogRepository(WorkerCRMDbContext context) : base(context)
         {
 
         }

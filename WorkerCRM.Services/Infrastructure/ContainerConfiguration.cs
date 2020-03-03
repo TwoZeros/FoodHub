@@ -14,6 +14,8 @@ namespace WorkerCRM.Services.Infrastructure
         {
             WorkerCRM.Data.Infrastructure.ContainerConfiguration.Configure(services);
             services.AddTransient<ILoggerService, LoggerService>();
+            services.AddTransient<IAuthorizationService, AuthorizationService>();
+            services.AddTransient<IEmployeeService, EmployeeService>();
         }
     }
 }

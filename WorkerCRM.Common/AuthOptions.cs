@@ -7,13 +7,13 @@ namespace WorkerCRM.Common
 {
     public class AuthOptions
     {
-        public const string ISSUER = "NightDev Production"; // издатель токена
-        public const string AUDIENCE = "BlackList CRM"; // потребитель токена
-        const string KEY = "mysupersecret_BlackList!123";   // ключ для шифрации
-        public const int LIFETIME = 1440; // время жизни токена - 24 часа
+        public const string Issuer = "NightDev Production"; // издатель токена
+        public const string Audience = "BlackList CRM"; // потребитель токена
+        const string Key = "mysupersecret_BlackList!123";   // ключ для шифрации
+        public const int Lifetime = 1440; // время жизни токена - 24 часа
         public static SymmetricSecurityKey GetSymmetricSecurityKey()
         {
-            return new SymmetricSecurityKey(Encoding.ASCII.GetBytes(KEY));
+            return new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Key));
         }
     }
 }

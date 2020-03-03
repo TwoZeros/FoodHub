@@ -11,9 +11,9 @@ namespace WorkerCRM.Data.Base
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, IEntity
     {
-        private readonly PlanersDbContext _dbContext;
+        private readonly WorkerCRMDbContext _dbContext;
 
-        public BaseRepository(PlanersDbContext dbContext)
+        public BaseRepository(WorkerCRMDbContext dbContext)
         {
             _dbContext = dbContext;
         }

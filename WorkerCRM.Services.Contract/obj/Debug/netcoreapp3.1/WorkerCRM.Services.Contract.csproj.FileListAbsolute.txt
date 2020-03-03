@@ -8,3 +8,6 @@ C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\obj\Debug\ne
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.pdb
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.runtimeconfig.json
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.runtimeconfig.dev.json
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Models.dll
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Models.pdb
+C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.csproj.CopyComplete

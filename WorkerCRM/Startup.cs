@@ -16,6 +16,13 @@ using WorkerCRM.Infrastructure;
 using WorkerCRM.Infrastructure.Mappers.Interfaces;
 using WorkerCRM.Services;
 using Serilog.Extensions.Logging.File;
+using Swashbuckle.AspNetCore;
+
+using System;
+using System.Reflection;
+using System.IO;
+using Microsoft.OpenApi.Models;
+using WorkerCRM.Services.Infrastructure.Mappers;
 
 namespace WorkerCRM
 {
@@ -31,9 +38,9 @@ namespace WorkerCRM
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-           
-            services.AddDbContext<PlanersDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), x => x.MigrationsAssembly("WorkerCRM")));
+            services.AddCors();
+            services.AddDbContext<WorkerCRMDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), x => x.MigrationsAssembly("WorkerCRM.Data")));
 
             var mappingConfig = new MapperConfiguration(mc =>
             {
@@ -48,10 +55,15 @@ namespace WorkerCRM
 
             // Mappers
             services.AddTransient<IOrderMapper, OrderMapper>();
+            services.AddTransient<IEmployeeDetailMapper, EmployeeDetailMapper>();
+            services.AddTransient<IEmployeeListMapper, EmployeeListMapper>();
 
             // Services
             Services.Infrastructure.ContainerConfiguration.Configure(services);
+            Services.Infrastructure.AuthorisationConfiguration.Configure(services);
+            Services.Infrastructure.SwaggerConfiguration.Configure(services);
 
+          
             services.AddControllers();
           
         }
@@ -63,6 +75,10 @@ namespace WorkerCRM
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(
+      options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
+  );
+
             logger.LogInformation("Processing request ");
             app.UseHttpsRedirection();
 
@@ -73,6 +89,17 @@ namespace WorkerCRM
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
             });
         }
     }

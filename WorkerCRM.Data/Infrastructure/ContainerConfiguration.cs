@@ -11,6 +11,8 @@ namespace WorkerCRM.Data.Infrastructure
         public static void Configure(IServiceCollection services)
         {
             services.AddTransient<ILogRepository, LogRepository>();
+            services.AddTransient<IAuthorizationRepository, AuthorizationRepository>();
+            services.AddTransient<IEmployeeRepository, EmployeeRepository>();
         }
     }
 }

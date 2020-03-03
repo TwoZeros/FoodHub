@@ -14,9 +14,9 @@ namespace WorkerCRM.Services
 {
     public class LoggerService : ILoggerService
     {
-        private readonly PlanersDbContext _context;
+        private readonly WorkerCRMDbContext _context;
         private Logger _Log;
-        public LoggerService(IOptions<LoggerSettings> options, PlanersDbContext context)
+        public LoggerService(IOptions<LoggerSettings> options, WorkerCRMDbContext context)
         {
             _context = context;
             var date = DateTime.Now;

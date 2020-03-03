@@ -7,22 +7,23 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WorkerCRM.Data;
 using WorkerCRM.Models;
-
+using Microsoft.AspNetCore.Authorization;
 namespace WorkerCRM.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class LogEntriesController : ControllerBase
     {
-        private readonly PlanersDbContext _context;
+        private readonly WorkerCRMDbContext _context;
 
-        public LogEntriesController(PlanersDbContext context)
+        public LogEntriesController(WorkerCRMDbContext context)
         {
             _context = context;
         }
 
         // GET: api/LogEntries
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<LogEntry>>> GetLogs()
         {
             return await _context.Logs.ToListAsync();
