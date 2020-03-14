@@ -11,7 +11,7 @@ namespace WorkerCRM.Models
 
         public string Name { get; set; }
 
-        public IEnumerable<EmployeeContact> EmployeeContact { get; set; } 
+        public IEnumerable<EmployeeContact> Contacts{ get; set; } 
         
     }
 }

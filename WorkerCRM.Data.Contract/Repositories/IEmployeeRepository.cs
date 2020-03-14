@@ -12,6 +12,8 @@ namespace WorkerCRM.Data.Contract.Repositories
     {
         List<Employee> GetListEmployee();
         Task<Employee> GetEmployeeInfo(int id);
+        void PutEmployee(Employee employee);
+        void PutEmployeePhoto(Employee employee);
     }
     
 }

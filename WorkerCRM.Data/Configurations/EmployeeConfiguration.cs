@@ -20,11 +20,11 @@ namespace WorkerCRM.Data.Configurations
           
             
 
-          /*  builder.HasMany(x => x.EmployeeContacts)
+           builder.HasMany(x => x.Contacts)
                             .WithOne(x => x.Employee)
                             .HasForeignKey(x => x.EmployeeId)
                             .OnDelete(DeleteBehavior.Cascade);
-                            */
+                            
                 
         }
     }

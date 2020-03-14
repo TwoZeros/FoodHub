@@ -40,6 +40,9 @@ namespace WorkerCRM.Data.Migrations
                     b.Property<string>("MiddleName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Photo")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("SecondName")
                         .IsRequired()
                         .HasColumnType("nvarchar(256)")
@@ -152,13 +155,13 @@ namespace WorkerCRM.Data.Migrations
             modelBuilder.Entity("WorkerCRM.Models.EmployeeContact", b =>
                 {
                     b.HasOne("WorkerCRM.Models.Employee", "Employee")
-                        .WithMany("EmployeeContacts")
+                        .WithMany("Contacts")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("WorkerCRM.Models.TypeContact", "TypeContact")
-                        .WithMany("EmployeeContact")
+                        .WithMany("Contacts")
                         .HasForeignKey("TypeContactId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

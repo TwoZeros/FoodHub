@@ -17,12 +17,12 @@ namespace WorkerCRM.Data.Configurations
 
             builder
                   .HasOne(sc => sc.Employee)
-                  .WithMany(c => c.EmployeeContact)
+                  .WithMany(c => c.Contacts)
                   .HasForeignKey(sc => sc.EmployeeId);
                   
             builder
              .HasOne(sc => sc.TypeContact)
-             .WithMany(c => c.EmployeeContact)
+             .WithMany(c => c.Contacts)
              .HasForeignKey(sc => sc.TypeContactId); 
         }
     }

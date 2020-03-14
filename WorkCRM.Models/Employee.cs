@@ -16,7 +16,8 @@ namespace WorkerCRM.Models
         public DateTime BirthDay { get; set; }
 
         public virtual User User { get; set; }
-        public virtual IEnumerable<EmployeeContact> EmployeeContact {get;set;}
+        public string Photo { get; set; }
+        public virtual IEnumerable<EmployeeContact> Contacts {get;set;}
 
 
     }

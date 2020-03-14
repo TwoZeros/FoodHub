@@ -15,6 +15,7 @@ namespace WorkerCRM.Services.Contract.Dto
         public string Login { get; set; }
         public string BirthDay { get; set; }
         public string Created { get; set; }
-        public IEnumerable<ContactDto> EmployeeContact { get; set; }
+        public string Photo { get; set; }
+        public IEnumerable<ContactDto> Contacts { get; set; }
     }
 }

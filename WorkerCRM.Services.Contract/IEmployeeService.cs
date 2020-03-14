@@ -14,5 +14,12 @@ namespace WorkerCRM.Services.Contract
         public Task<EmployeeDetailDto> GetById(int id);
 
         public List<EmployeeListDto> GetAll();
+        public Task<string> Delete(int id);
+
+        public Task AddEmployee(Employee employee);
+
+        public void PutEmployee(int id, Employee employee);
+
+        public void PutEmployeePhoto(int id, Employee employee);
     }
 }
