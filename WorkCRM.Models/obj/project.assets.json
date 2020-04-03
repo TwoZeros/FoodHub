@@ -4951,11 +4951,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkCRM.Models\\WorkerCRM.Models.csproj",
+      "projectUniqueName": "E:\\FoodHub\\WorkCRM.Models\\WorkerCRM.Models.csproj",
       "projectName": "WorkerCRM.Models",
-      "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkCRM.Models\\WorkerCRM.Models.csproj",
+      "projectPath": "E:\\FoodHub\\WorkCRM.Models\\WorkerCRM.Models.csproj",
       "packagesPath": "C:\\Users\\Kirill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkCRM.Models\\obj\\",
+      "outputPath": "E:\\FoodHub\\WorkCRM.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kirill\\AppData\\Roaming\\NuGet\\NuGet.Config",

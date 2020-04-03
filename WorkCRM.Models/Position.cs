@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WorkerCRM.Models.Interfaces;
+
 namespace WorkerCRM.Models
 {
-    public class TypeContact : IEntity
+    public class Position : IEntity
     {
         public int Id { get; set; }
-
         public string Name { get; set; }
-
-        public IEnumerable<EmployeeContact> Contacts{ get; set; } 
-        
+        public bool IsAllowedDelete { get; set; }
     }
 }

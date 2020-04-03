@@ -32,16 +32,28 @@ namespace WorkerCRM.Data.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
 
                     b.Property<string>("MiddleName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<string>("Photo")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PositionId")
+                        .HasColumnType("int");
 
                     b.Property<string>("SecondName")
                         .IsRequired()
@@ -53,29 +65,11 @@ namespace WorkerCRM.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("PositionId");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("Employees");
-                });
-
-            modelBuilder.Entity("WorkerCRM.Models.EmployeeContact", b =>
-                {
-                    b.Property<int>("EmployeeId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TypeContactId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Value")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(256)")
-                        .HasMaxLength(256);
-
-                    b.HasKey("EmployeeId", "TypeContactId");
-
-                    b.HasIndex("TypeContactId");
-
-                    b.ToTable("EmployeeContact");
                 });
 
             modelBuilder.Entity("WorkerCRM.Models.LogEntry", b =>
@@ -101,21 +95,48 @@ namespace WorkerCRM.Data.Migrations
                     b.ToTable("Logs");
                 });
 
-            modelBuilder.Entity("WorkerCRM.Models.TypeContact", b =>
+            modelBuilder.Entity("WorkerCRM.Models.Position", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("IsAllowedDelete")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(256)")
-                        .HasMaxLength(256);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("TypeContact");
+                    b.ToTable("Positions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsAllowedDelete = false,
+                            Name = "Директор"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            IsAllowedDelete = false,
+                            Name = "Менеджер"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            IsAllowedDelete = false,
+                            Name = "Курьер"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            IsAllowedDelete = false,
+                            Name = "Повар"
+                        });
                 });
 
             modelBuilder.Entity("WorkerCRM.Models.User", b =>
@@ -143,28 +164,26 @@ namespace WorkerCRM.Data.Migrations
                     b.HasAlternateKey("Login");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Login = "Admin",
+                            Password = "12345678",
+                            Role = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("WorkerCRM.Models.Employee", b =>
                 {
+                    b.HasOne("WorkerCRM.Models.Position", "Position")
+                        .WithMany()
+                        .HasForeignKey("PositionId");
+
                     b.HasOne("WorkerCRM.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("WorkerCRM.Models.EmployeeContact", b =>
-                {
-                    b.HasOne("WorkerCRM.Models.Employee", "Employee")
-                        .WithMany("Contacts")
-                        .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WorkerCRM.Models.TypeContact", "TypeContact")
-                        .WithMany("Contacts")
-                        .HasForeignKey("TypeContactId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

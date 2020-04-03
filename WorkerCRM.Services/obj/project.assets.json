@@ -7713,11 +7713,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services\\WorkerCRM.Services.csproj",
+      "projectUniqueName": "E:\\FoodHub\\WorkerCRM.Services\\WorkerCRM.Services.csproj",
       "projectName": "WorkerCRM.Services",
-      "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services\\WorkerCRM.Services.csproj",
+      "projectPath": "E:\\FoodHub\\WorkerCRM.Services\\WorkerCRM.Services.csproj",
       "packagesPath": "C:\\Users\\Kirill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services\\obj\\",
+      "outputPath": "E:\\FoodHub\\WorkerCRM.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kirill\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7733,14 +7733,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Common\\WorkerCRM.Common.csproj": {
-              "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Common\\WorkerCRM.Common.csproj"
+            "E:\\FoodHub\\WorkerCRM.Common\\WorkerCRM.Common.csproj": {
+              "projectPath": "E:\\FoodHub\\WorkerCRM.Common\\WorkerCRM.Common.csproj"
             },
-            "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Data\\WorkerCRM.Data.csproj": {
-              "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Data\\WorkerCRM.Data.csproj"
+            "E:\\FoodHub\\WorkerCRM.Data\\WorkerCRM.Data.csproj": {
+              "projectPath": "E:\\FoodHub\\WorkerCRM.Data\\WorkerCRM.Data.csproj"
             },
-            "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj": {
-              "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj"
+            "E:\\FoodHub\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj": {
+              "projectPath": "E:\\FoodHub\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj"
             }
           }
         }

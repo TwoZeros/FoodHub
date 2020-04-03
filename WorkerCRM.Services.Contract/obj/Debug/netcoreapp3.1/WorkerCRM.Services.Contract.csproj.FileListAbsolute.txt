@@ -11,3 +11,16 @@ C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\ne
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Models.dll
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Models.pdb
 C:\Users\Kirill\Desktop\it-pt\WorkerCRM\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.csproj.CopyComplete
+E:\FoodHub\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.deps.json
+E:\FoodHub\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.runtimeconfig.json
+E:\FoodHub\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.runtimeconfig.dev.json
+E:\FoodHub\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.dll
+E:\FoodHub\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.pdb
+E:\FoodHub\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Models.dll
+E:\FoodHub\WorkerCRM.Services.Contract\bin\Debug\netcoreapp3.1\WorkerCRM.Models.pdb
+E:\FoodHub\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.csprojAssemblyReference.cache
+E:\FoodHub\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.AssemblyInfoInputs.cache
+E:\FoodHub\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.AssemblyInfo.cs
+E:\FoodHub\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.csproj.CopyComplete
+E:\FoodHub\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.dll
+E:\FoodHub\WorkerCRM.Services.Contract\obj\Debug\netcoreapp3.1\WorkerCRM.Services.Contract.pdb

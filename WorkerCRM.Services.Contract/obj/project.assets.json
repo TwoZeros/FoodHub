@@ -4963,11 +4963,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj",
+      "projectUniqueName": "E:\\FoodHub\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj",
       "projectName": "WorkerCRM.Services.Contract",
-      "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj",
+      "projectPath": "E:\\FoodHub\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj",
       "packagesPath": "C:\\Users\\Kirill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services.Contract\\obj\\",
+      "outputPath": "E:\\FoodHub\\WorkerCRM.Services.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kirill\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4983,8 +4983,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkCRM.Models\\WorkerCRM.Models.csproj": {
-              "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkCRM.Models\\WorkerCRM.Models.csproj"
+            "E:\\FoodHub\\WorkCRM.Models\\WorkerCRM.Models.csproj": {
+              "projectPath": "E:\\FoodHub\\WorkCRM.Models\\WorkerCRM.Models.csproj"
             }
           }
         }

@@ -3002,10 +3002,7 @@
         },
         "runtime": {
           "bin/placeholder/WorkerCRM.Data.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "WorkerCRM.Data.Contract/1.0.0": {
         "type": "project",
@@ -3021,10 +3018,7 @@
         },
         "runtime": {
           "bin/placeholder/WorkerCRM.Data.Contract.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "WorkerCRM.Models/1.0.0": {
         "type": "project",
@@ -3041,10 +3035,7 @@
         },
         "runtime": {
           "bin/placeholder/WorkerCRM.Models.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "WorkerCRM.Services/1.0.0": {
         "type": "project",
@@ -3065,10 +3056,7 @@
         },
         "runtime": {
           "bin/placeholder/WorkerCRM.Services.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "WorkerCRM.Services.Contract/1.0.0": {
         "type": "project",
@@ -3086,10 +3074,7 @@
         },
         "runtime": {
           "bin/placeholder/WorkerCRM.Services.Contract.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -9481,11 +9466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM\\WorkerCRM.csproj",
+      "projectUniqueName": "E:\\FoodHub\\WorkerCRM\\WorkerCRM.csproj",
       "projectName": "WorkerCRM",
-      "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM\\WorkerCRM.csproj",
+      "projectPath": "E:\\FoodHub\\WorkerCRM\\WorkerCRM.csproj",
       "packagesPath": "C:\\Users\\Kirill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM\\obj\\",
+      "outputPath": "E:\\FoodHub\\WorkerCRM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kirill\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9501,17 +9486,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Common\\WorkerCRM.Common.csproj": {
-              "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Common\\WorkerCRM.Common.csproj"
+            "E:\\FoodHub\\WorkerCRM.Common\\WorkerCRM.Common.csproj": {
+              "projectPath": "E:\\FoodHub\\WorkerCRM.Common\\WorkerCRM.Common.csproj"
             },
-            "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Data\\WorkerCRM.Data.csproj": {
-              "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Data\\WorkerCRM.Data.csproj"
+            "E:\\FoodHub\\WorkerCRM.Data\\WorkerCRM.Data.csproj": {
+              "projectPath": "E:\\FoodHub\\WorkerCRM.Data\\WorkerCRM.Data.csproj"
             },
-            "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj": {
-              "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj"
+            "E:\\FoodHub\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj": {
+              "projectPath": "E:\\FoodHub\\WorkerCRM.Services.Contract\\WorkerCRM.Services.Contract.csproj"
             },
-            "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services\\WorkerCRM.Services.csproj": {
-              "projectPath": "C:\\Users\\Kirill\\Desktop\\it-pt\\WorkerCRM\\WorkerCRM.Services\\WorkerCRM.Services.csproj"
+            "E:\\FoodHub\\WorkerCRM.Services\\WorkerCRM.Services.csproj": {
+              "projectPath": "E:\\FoodHub\\WorkerCRM.Services\\WorkerCRM.Services.csproj"
             }
           }
         }

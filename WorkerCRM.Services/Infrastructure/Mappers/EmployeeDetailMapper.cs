@@ -21,11 +21,6 @@ namespace WorkerCRM.Services.Infrastructure.Mappers
         {
             var config = new MapperConfiguration(cfg =>
             {
-               cfg.CreateMap<EmployeeContact, ContactDto>()
-               .ForMember(x => x.Name, s => s.MapFrom(x => x.TypeContact.Name))
-                .ForMember(x => x.Id, s => s.MapFrom(x => x.TypeContactId))
-                .ForMember(x => x.Value, s => s.MapFrom(x => x.Value));
-               
                 cfg.CreateMap<EmployeeDetailDto, Employee>();
 
                 cfg.CreateMap<Employee, EmployeeDetailDto>();

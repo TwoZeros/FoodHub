@@ -21,7 +21,7 @@ namespace WorkerCRM.Data.Repositories
         }
         public async Task<Employee> GetEmployeeInfo(int id)
         {
-            return await _context.Employees.Include(p => p.User).Include(p => p.Contacts).ThenInclude(sc => sc.TypeContact)
+            return await _context.Employees.Include(p => p.User)
                 .AsNoTracking()
                 .FirstOrDefaultAsync(f => f.Id == id);
         }
