@@ -17,8 +17,7 @@ COPY ["WorkerCRM/WorkerCRM.csproj", "WorkerCRM/"]  && \
 RUN dotnet restore "WorkerCRM/WorkerCRM.csproj"
 COPY . .
 WORKDIR "/src/WorkerCRM"
-RUN dotnet build "WorkerCRM.csproj" -c Release -o /app/build && \
-dotnet ef database update
+RUN dotnet build "WorkerCRM.csproj" -c Release -o /app/build 
 FROM build AS publish
 RUN dotnet publish "WorkerCRM.csproj" -c Release -o /app/publish
 
