@@ -181,8 +181,6 @@ E:\FoodHub\WorkerCRM\obj\Debug\netcoreapp3.1\WorkerCRM.dll
 E:\FoodHub\WorkerCRM\obj\Debug\netcoreapp3.1\WorkerCRM.pdb
 E:\FoodHub\WorkerCRM\obj\Debug\netcoreapp3.1\staticwebassets\WorkerCRM.StaticWebAssets.Manifest.cache
 E:\FoodHub\WorkerCRM\obj\Debug\netcoreapp3.1\staticwebassets\WorkerCRM.StaticWebAssets.xml
-E:\FoodHub\WorkerCRM\obj\Debug\netcoreapp3.1\WorkerCRM.MvcApplicationPartsAssemblyInfo.cs
-E:\FoodHub\WorkerCRM\obj\Debug\netcoreapp3.1\WorkerCRM.MvcApplicationPartsAssemblyInfo.cache
 E:\FoodHub\WorkerCRM\obj\Debug\netcoreapp3.1\WorkerCRM.AssemblyInfoInputs.cache
 E:\FoodHub\WorkerCRM\obj\Debug\netcoreapp3.1\WorkerCRM.AssemblyInfo.cs
 E:\FoodHub\WorkerCRM\bin\Debug\netcoreapp3.1\appsettings.Development.json
