@@ -21,9 +21,9 @@ namespace WorkerCRM.Services.Infrastructure.Mappers
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap < ClientListDto, Client>();
+                cfg.CreateMap <ClientListDto, Client>();
 
-                cfg.CreateMap<Employee, EmployeeListDto>()
+                cfg.CreateMap<Client, ClientListDto>()
                 .ForMember(x => x.BirthDay, s => s.MapFrom(x => x.BirthDay.ToString("d")))
                 .ForMember(x => x.Created, s => s.MapFrom(x => x.CreatedDate.ToString("d")));
             });

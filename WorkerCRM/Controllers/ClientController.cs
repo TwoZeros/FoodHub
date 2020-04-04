@@ -26,31 +26,31 @@ namespace WorkerCRM.Controllers
             _clientService = clientService;
         }
 
-        // GET: api/Employees
+        // GET: api/Client
         [HttpGet]
-        public List<ClientListDto> GetEmployees()
+        public List<ClientListDto> GetClients()
         {
    
         return _clientService.GetAll();
         }
 
-        // GET: api/Employees/5
+        // GET: api/Client/5
         [HttpGet("{id}")]
-        public async Task<ActionResult> GetEmployee(int id)
+        public async Task<ActionResult> GetClients(int id)
         {
-            var employee = await _clientService.GetById(id);
+            var client = await _clientService.GetById(id);
 
-            if (employee == null)
+            if (client == null)
             {
                 return NotFound();
             }
 
-            return new JsonResult(employee);
+            return new JsonResult(client);
         }
 
-        // PUT: api/Employees/5
+        // PUT: api/Client/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEmployee(int id, Client client)
+        public async Task<IActionResult> PutClient(int id, Client client)
         {
             if (id != client.Id)
                 return BadRequest();
@@ -63,7 +63,7 @@ namespace WorkerCRM.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!EmployeeExists(id))
+                if (!ClientExists(id))
                 {
                     return NotFound();
                 }
@@ -77,7 +77,7 @@ namespace WorkerCRM.Controllers
         }
 
         [HttpPut("{id}/upload-avatar")]
-        public async Task<IActionResult> PutEmployeePhoto(int id, Client client)
+        public async Task<IActionResult> PutClientPhoto(int id, Client client)
         {
             if (id != client.Id)
                 return BadRequest();
@@ -90,7 +90,7 @@ namespace WorkerCRM.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!EmployeeExists(id))
+                if (!ClientExists(id))
                 {
                     return NotFound();
                 }
@@ -103,19 +103,19 @@ namespace WorkerCRM.Controllers
             return NoContent();
         }
 
-        // POST: api/Employees
+        // POST: api/Client
 
         [HttpPost]
-        public async Task<ActionResult<Employee>> PostEmployee(Client client)
+        public async Task<ActionResult<Client>> PostClient(Client client)
         {
            await _clientService.AddClient(client);
 
-            return CreatedAtAction("GetEmployee", new { id = client.Id }, client);
+            return CreatedAtAction("GetClient", new { id = client.Id }, client);
         }
 
-        // DELETE: api/Employees/5
+        // DELETE: api/Client/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteEmployee(int id)
+        public async Task<ActionResult> Delete(int id)
         {
             var status = await _clientService.Delete(id);
             if (status == "Not Found")
@@ -126,10 +126,9 @@ namespace WorkerCRM.Controllers
  
             return new JsonResult(status);
         }
-        [Authorize]
-        private bool EmployeeExists(int id)
+        private bool ClientExists(int id)
         {
-            return _context.Employees.Any(e => e.Id == id);
+            return _context.Clients.Any(e => e.Id == id);
         }
     }
 }
