@@ -4,12 +4,13 @@ using System.Text;
 using System.Threading.Tasks;
 using WorkerCRM.Data.Contract.Repositories;
 using WorkerCRM.Models;
+using WorkerCRM.Services.Contract;
 using WorkerCRM.Services.Contract.Dto;
 using WorkerCRM.Services.Infrastructure.Mappers;
 
 namespace WorkerCRM.Services
 {
-    class CommentService
+    class CommentService : ICommentService
     {
         public ICommentRepository _repo;
 

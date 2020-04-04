@@ -70,6 +70,5 @@ namespace WorkerCRM.Services
             _repo.PutEmployeePhoto(employee);
         }
 
-
     }
 }

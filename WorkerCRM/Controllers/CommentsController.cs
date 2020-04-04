@@ -101,7 +101,32 @@ namespace WorkerCRM.Controllers
             return new JsonResult(status);
         }
 
-        private bool CommentExists(int id)
+        [HttpDelete("/api/commentsClient/{nameClient}")]
+        public async Task<IActionResult> GetRating(int id)
+        {
+            
+            _commentService.GetRating(id);
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CommentExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+ 
+            }
+            return NoContent();
+        }
+
+            private bool CommentExists(int id)
         {
             return _context.Comments.Any(e => e.Id == id);
         }

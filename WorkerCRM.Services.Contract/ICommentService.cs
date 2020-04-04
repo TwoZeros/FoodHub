@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WorkerCRM.Models;
@@ -18,6 +19,6 @@ namespace WorkerCRM.Services.Contract
 
         public void PutComment(int id, Comment comment);
 
-        public List<Comment> GetRating(int id);
+        public int GetRating(int id);
     }
 }
