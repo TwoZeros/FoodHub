@@ -27,11 +27,11 @@ namespace WorkerCRM.Controllers
 
         // GET: api/Comments
         [HttpGet]
-
         public List<CommentListDto> GetComments()
         {
             return _commentService.GetAll();
         }
+        
         // GET: api/Comments/5
         [HttpGet("{id}")]
         public async Task<ActionResult> GetComment(int id)
@@ -85,7 +85,7 @@ namespace WorkerCRM.Controllers
         {
             await _commentService.AddComment(comment);
 
-            return CreatedAtAction("GetEmployee", new { id = comment.Id }, comment);
+            return CreatedAtAction("GetComment", new { id = comment.Id }, comment);
         }
 
         // DELETE: api/Comments/5
@@ -126,7 +126,7 @@ namespace WorkerCRM.Controllers
             return NoContent();
         }
 
-            private bool CommentExists(int id)
+        private bool CommentExists(int id)
         {
             return _context.Comments.Any(e => e.Id == id);
         }

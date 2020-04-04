@@ -13,7 +13,7 @@ namespace WorkerCRM.Services.Infrastructure.Mappers
     {
     }
 
-    class CommentDetailMapper : AbstractModelMapper<CommentDetailDto, Comment>, ICommentDetailMapper
+    public class CommentDetailMapper : AbstractModelMapper<CommentDetailDto, Comment>, ICommentDetailMapper
     {
         protected override IMapper Configure()
         {
