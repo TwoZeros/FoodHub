@@ -24,7 +24,7 @@ namespace WorkerCRM.Data
             builder.ApplyConfiguration(new EmployeeConfiguration());
             builder.ApplyConfiguration(new ClientConfiguration());
             builder.ApplyConfiguration(new UserConfiguration());
-
+            builder.ApplyConfiguration(new CommentConfiguration());
             builder.Entity<User>().HasData(
                new User[]
                {
@@ -39,12 +39,7 @@ namespace WorkerCRM.Data
                 new Position { Id=4, Name="Повар", IsAllowedDelete=false},
 
                });
-            builder.Entity<Comment>()
-                .HasOne(p => p.Client)
-                .WithMany(p => p.Comments);
-            builder.Entity<Comment>()
-                .HasOne(p => p.User)
-                .WithMany(p => p.Comments);
+
  
         }
 

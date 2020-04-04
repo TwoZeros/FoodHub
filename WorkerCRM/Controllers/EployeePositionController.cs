@@ -55,7 +55,7 @@ namespace WorkerCRM.Controllers
             if (id != position.Id)
                 return BadRequest();
 
-            _employeePositiontService.Update(position);
+            await _employeePositiontService.Update(position);
 
             return NoContent();
         }

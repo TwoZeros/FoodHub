@@ -10,10 +10,10 @@ namespace WorkerCRM.Models
     {
         public int Id { get; set; }
 
-        public int IdClient { get; set; }
-        public int IdUser { get; set; }
+        public int ClientId { get; set; }
+        public int UserId { get; set; }
         public Client Client { get; set; }
-        public User User { get; set; }
+        public virtual User User { get; set; }
 
         public DateTime CreateDate { get; set; }
 

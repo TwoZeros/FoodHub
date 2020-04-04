@@ -21,7 +21,8 @@ namespace WorkerCRM.Services.Infrastructure.Mappers
             {
                 cfg.CreateMap<CommentDetailDto, Comment>();
 
-                cfg.CreateMap<Comment, CommentDetailDto>();
+                cfg.CreateMap<Comment, CommentDetailDto>()
+                .ForMember(x => x.UserLogin, s => s.MapFrom(x => x.User.Login));
             });
 
             return config.CreateMapper();

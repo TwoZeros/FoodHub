@@ -21,14 +21,14 @@ namespace WorkerCRM.Data.Repositories
 
         public async Task<Comment> GetCommentInfo(int id)
         {
-            return await _context.Comments.Include(p => p.Text)
+            return await _context.Comments.Include(p => p.Client).Include(p=>p.User)
                 .AsNoTracking()
                 .FirstOrDefaultAsync(f => f.Id == id);
         }
 
         public List<Comment> GetListComment()
         {
-            return _context.Comments.Include(p => p.Client).ToList();
+            return _context.Comments.Include(p => p.Client).Include(p => p.User).ToList();
         }
 
         public void PutComment(Comment сomment)
@@ -42,7 +42,7 @@ namespace WorkerCRM.Data.Repositories
         }
         public List<Comment> GetListCommentWitnId(int id)
         {
-            return _context.Comments.Where(p => p.IdClient == id).ToList();
+            return _context.Comments.Where(p => p.ClientId == id).ToList();
         }
     }
 }
