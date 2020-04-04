@@ -41,11 +41,11 @@ namespace WorkerCRM.Data
                });
             builder.Entity<Comment>()
                 .HasOne(p => p.Client)
-                .WithMany(p => p.Comments)
-                .HasForeignKey(p => p.IdClient);
+                .WithMany(p => p.Comments);
             builder.Entity<Comment>()
                 .HasOne(p => p.User)
-                .WithMany(p => p.Comments);    
+                .WithMany(p => p.Comments);
+ 
         }
 
         public DbSet<LogEntry> Logs { get; set; }
