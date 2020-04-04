@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WorkerCRM.Data;
 
 namespace WorkerCRM.Data.Migrations
 {
     [DbContext(typeof(WorkerCRMDbContext))]
-    partial class WorkerCRMDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200404145723_MigrationwithComment")]
+    partial class MigrationwithComment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,13 +71,13 @@ namespace WorkerCRM.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("ClientId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("IdClient")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdUser")
                         .HasColumnType("int");
 
                     b.Property<int>("Karma")
@@ -86,9 +88,7 @@ namespace WorkerCRM.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdClient");
-
-                    b.HasIndex("IdUser");
+                    b.HasIndex("ClientId");
 
                     b.ToTable("Comments");
                 });
@@ -253,15 +253,7 @@ namespace WorkerCRM.Data.Migrations
                 {
                     b.HasOne("WorkerCRM.Models.Client", "Client")
                         .WithMany("Comments")
-                        .HasForeignKey("IdClient")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WorkerCRM.Models.User", "User")
-                        .WithMany("Comments")
-                        .HasForeignKey("IdUser")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ClientId");
                 });
 
             modelBuilder.Entity("WorkerCRM.Models.Employee", b =>

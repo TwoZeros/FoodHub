@@ -69,7 +69,5 @@ namespace WorkerCRM.Services
         {
             _repo.PutClientPhoto(client);
         }
-
-
     }
 }

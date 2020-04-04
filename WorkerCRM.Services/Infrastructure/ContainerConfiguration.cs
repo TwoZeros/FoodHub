@@ -18,6 +18,7 @@ namespace WorkerCRM.Services.Infrastructure
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddTransient<IClientService, ClientService>();
             services.AddTransient<IEmployeePositionService, EmployeePositionServices>();
+            services.AddTransient<ICommentService, CommentService>();
         }
     }
 }

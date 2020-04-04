@@ -39,6 +39,13 @@ namespace WorkerCRM.Data
                 new Position { Id=4, Name="Повар", IsAllowedDelete=false},
 
                });
+            builder.Entity<Comment>()
+                .HasOne(p => p.Client)
+                .WithMany(p => p.Comments);
+            builder.Entity<Comment>()
+                .HasOne(p => p.User)
+                .WithMany(p => p.Comments);
+ 
         }
 
         public DbSet<LogEntry> Logs { get; set; }
@@ -47,5 +54,6 @@ namespace WorkerCRM.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 }
