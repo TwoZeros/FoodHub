@@ -28,7 +28,7 @@ namespace WorkerCRM.Data.Repositories
 
         public List<Comment> GetListComment()
         {
-            return _context.Comments.Include(p => p.Text).ToList();
+            return _context.Comments.Include(p => p.Client).ToList();
         }
 
         public void PutComment(Comment сomment)
