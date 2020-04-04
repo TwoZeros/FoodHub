@@ -6,7 +6,7 @@ using WorkerCRM.Services.Contract.Dto;
 
 namespace WorkerCRM.Services.Contract.Dto
 {
-    public class EmployeeDetailDto
+    public class ClientDetailDto
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

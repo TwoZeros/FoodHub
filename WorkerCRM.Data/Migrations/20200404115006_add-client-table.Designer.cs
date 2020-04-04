@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WorkerCRM.Data;
 
 namespace WorkerCRM.Data.Migrations
 {
     [DbContext(typeof(WorkerCRMDbContext))]
-    partial class WorkerCRMDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200404115006_add-client-table")]
+    partial class addclienttable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

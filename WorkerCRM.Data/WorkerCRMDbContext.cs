@@ -22,7 +22,7 @@ namespace WorkerCRM.Data
         {
             builder.ApplyConfiguration(new LogConfiguration());
             builder.ApplyConfiguration(new EmployeeConfiguration());
-
+            builder.ApplyConfiguration(new ClientConfiguration());
             builder.ApplyConfiguration(new UserConfiguration());
 
             builder.Entity<User>().HasData(
@@ -43,9 +43,9 @@ namespace WorkerCRM.Data
 
         public DbSet<LogEntry> Logs { get; set; }
         public DbSet<User> Users { get; set; }
-
+       
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Position> Positions { get; set; }
-       
+        public DbSet<Client> Clients { get; set; }
     }
 }

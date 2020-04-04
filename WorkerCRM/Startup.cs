@@ -57,7 +57,9 @@ namespace WorkerCRM
             services.AddTransient<IOrderMapper, OrderMapper>();
             services.AddTransient<IEmployeeDetailMapper, EmployeeDetailMapper>();
             services.AddTransient<IEmployeeListMapper, EmployeeListMapper>();
-
+            services.AddTransient<IClientListMapper, ClientListMapper>();
+            services.AddTransient<IClientDetailMapper, ClientDetailMapper>();
+           
             // Services
             Services.Infrastructure.ContainerConfiguration.Configure(services);
             Services.Infrastructure.AuthorisationConfiguration.Configure(services);

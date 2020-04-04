@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Linq;
-using WorkerCRM.Services.Contract.Dto;
 
 namespace WorkerCRM.Services.Contract.Dto
 {
-    public class EmployeeDetailDto
+    public class ClientListDto
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -15,6 +13,8 @@ namespace WorkerCRM.Services.Contract.Dto
         public string Login { get; set; }
         public string BirthDay { get; set; }
         public string Created { get; set; }
-        public string Photo { get; set; }
+        
     }
+
+   
 }

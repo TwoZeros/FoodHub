@@ -23,6 +23,7 @@ namespace WorkerCRM.Data.Repositories
             return  _context.Users.FirstOrDefault(x => x.Login == username && x.Password == password);
         }
 
+
        
 
     }
