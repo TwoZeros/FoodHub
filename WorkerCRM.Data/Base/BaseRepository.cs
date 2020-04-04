@@ -18,10 +18,10 @@ namespace WorkerCRM.Data.Base
             _dbContext = dbContext;
         }
 
-        public IQueryable<TEntity> GetAll()
+        public List<TEntity> GetAll()
         {
             return _dbContext.Set<TEntity>()
-                .AsNoTracking();
+                .AsNoTracking().ToList();
         }
 
         public async Task<TEntity> GetById(int id)
