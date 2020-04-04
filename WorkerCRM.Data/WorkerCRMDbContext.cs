@@ -47,5 +47,6 @@ namespace WorkerCRM.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 }
