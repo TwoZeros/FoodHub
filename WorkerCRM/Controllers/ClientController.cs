@@ -36,7 +36,7 @@ namespace WorkerCRM.Controllers
 
         // GET: api/Client/5
         [HttpGet("{id}")]
-        public async Task<ActionResult> GetClients(int id)
+        public async Task<ActionResult> GetClient(int id)
         {
             var client = await _clientService.GetById(id);
 
