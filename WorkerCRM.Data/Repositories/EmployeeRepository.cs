@@ -36,6 +36,10 @@ namespace WorkerCRM.Data.Repositories
                 .Property(i => i.MiddleName).IsModified = true;
             _context.Entry(employee)
                 .Property(i => i.BirthDay).IsModified = true;
+            _context.Entry(employee)
+                .Property(i => i.PhoneNumber).IsModified = true;
+            _context.Entry(employee)
+                .Property(i => i.Email).IsModified = true;
         }
         public void PutEmployeePhoto(Employee employee)
         {
