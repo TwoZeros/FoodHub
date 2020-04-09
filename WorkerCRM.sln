@@ -9,13 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerCRM.Services.Contract
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerCRM.Common", "WorkerCRM.Common\WorkerCRM.Common.csproj", "{DFD401C9-89FC-46A3-AB0E-FD6B21BA77E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerCRM.Services", "WorkerCRM.Services\WorkerCRM.Services.csproj", "{46B86F72-AD8B-4B57-8C7D-44F437412580}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerCRM.Services", "WorkerCRM.Services\WorkerCRM.Services.csproj", "{46B86F72-AD8B-4B57-8C7D-44F437412580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerCRM.Data", "WorkerCRM.Data\WorkerCRM.Data.csproj", "{942F03D5-24C5-44A0-8D99-F1047465A979}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerCRM.Data", "WorkerCRM.Data\WorkerCRM.Data.csproj", "{942F03D5-24C5-44A0-8D99-F1047465A979}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerCRM.Data.Contract", "WorkerCRM.Data.Contract\WorkerCRM.Data.Contract.csproj", "{20CF5963-E91C-493B-9BD2-452D9E56F171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerCRM.Data.Contract", "WorkerCRM.Data.Contract\WorkerCRM.Data.Contract.csproj", "{20CF5963-E91C-493B-9BD2-452D9E56F171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerCRM.Models", "WorkCRM.Models\WorkerCRM.Models.csproj", "{0403F6F2-56F0-45AB-9B15-CD3888B29819}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerCRM.Models", "WorkCRM.Models\WorkerCRM.Models.csproj", "{0403F6F2-56F0-45AB-9B15-CD3888B29819}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

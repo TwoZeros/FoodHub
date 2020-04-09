@@ -14,6 +14,7 @@ namespace WorkerCRM.Data.Infrastructure
             services.AddTransient<IAuthorizationRepository, AuthorizationRepository>();
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
             services.AddTransient<IClientRepository, ClientRepository>();
+            services.AddTransient<ICarmaRepository, CarmaRepository>();
         }
     }
 }

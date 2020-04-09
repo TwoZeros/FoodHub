@@ -17,6 +17,7 @@ namespace WorkerCRM.Services.Infrastructure
             services.AddTransient<IAuthorizationService, AuthorizationService>();
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddTransient<IClientService, ClientService>();
+            services.AddTransient<ICarmaUser, CarmaUserService>(); 
         }
     }
 }
