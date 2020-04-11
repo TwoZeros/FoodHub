@@ -14,58 +14,50 @@ namespace WorkerCRM.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CommentsController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         private readonly WorkerCRMDbContext _context;
-        private readonly ICommentService _commentService;
+        private readonly IProductService _productService;
 
-        public CommentsController(WorkerCRMDbContext context, ICommentService commentService)
+        public ProductsController(WorkerCRMDbContext context, IProductService productService)
         {
             _context = context;
-            _commentService = commentService;
+            _productService = productService;
         }
 
-        // GET: api/Comments
+        // GET: api/Products
         [HttpGet]
-        public List<CommentListDto> GetComments()
+        public List<ProductListDto> GetProducts()
         {
-            return _commentService.GetAll();
+            return  _productService.GetAll();
         }
-        
-        // GET: api/Comments/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult> GetComment(int id)
-        {
-            var comment = await _commentService.GetById(id);
 
-            if (comment == null)
+        // GET: api/Products/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult> GetProduct(int id)
+        {
+            var product = await _productService.GetById(id);
+
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return new JsonResult(comment);
+            return new JsonResult(product);
         }
 
-        [HttpGet("getRating")]
-        public int GetRating(int id)
-        {
-
-            return _commentService.GetRating(id);
-
-
-        }
-
-        // PUT: api/Comments/5
+        // PUT: api/Products/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutComment(int id, Comment comment)
+        public async Task<IActionResult> PutProduct(int id, Product product)
         {
-            if (id != comment.Id)
+            if (id != product.Id)
             {
                 return BadRequest();
             }
-            _commentService.PutComment(id, comment);
+
+            _productService.PutProduct(id, product);
 
             try
             {
@@ -73,7 +65,7 @@ namespace WorkerCRM.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CommentExists(id))
+                if (!ProductExists(id))
                 {
                     return NotFound();
                 }
@@ -86,23 +78,24 @@ namespace WorkerCRM.Controllers
             return NoContent();
         }
 
-        // POST: api/Comments
+        // POST: api/Products
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<Comment>> PostComment(Comment comment)
+        public async Task<ActionResult<Product>> PostProduct(Product product)
         {
-            await _commentService.AddComment(comment);
 
-            return CreatedAtAction("GetComment", new { id = comment.Id }, comment);
+            await _productService.AddProduct(product);
+
+            return CreatedAtAction("GetProduct", new { id = product.Id }, product);
         }
 
-        // DELETE: api/Comments/5
+        // DELETE: api/Products/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteComment(int id)
+        public async Task<ActionResult<Product>> DeleteProduct(int id)
         {
-            var status = await _commentService.Delete(id);
-            if (status == "Not Found")
+            var status = await _productService.Delete(id);
+            if (status == null)
             {
                 return NotFound();
             }
@@ -110,11 +103,9 @@ namespace WorkerCRM.Controllers
             return new JsonResult(status);
         }
 
-      
-
-        private bool CommentExists(int id)
+        private bool ProductExists(int id)
         {
-            return _context.Comments.Any(e => e.Id == id);
+            return _context.Products.Any(e => e.Id == id);
         }
     }
 }

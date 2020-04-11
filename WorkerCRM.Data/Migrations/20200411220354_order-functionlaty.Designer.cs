@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WorkerCRM.Data;
 
 namespace WorkerCRM.Data.Migrations
 {
     [DbContext(typeof(WorkerCRMDbContext))]
-    partial class WorkerCRMDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200411220354_order-functionlaty")]
+    partial class orderfunctionlaty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -280,9 +282,6 @@ namespace WorkerCRM.Data.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
@@ -292,8 +291,6 @@ namespace WorkerCRM.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("OrderId");
-
-                    b.HasIndex("ProductId");
 
                     b.ToTable("ProductInOrders");
                 });
@@ -399,12 +396,6 @@ namespace WorkerCRM.Data.Migrations
                     b.HasOne("WorkerCRM.Models.Order", "Order")
                         .WithMany("ProductInOrders")
                         .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WorkerCRM.Models.Product", "Product")
-                        .WithMany("ProductInOrder")
-                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

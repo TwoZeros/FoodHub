@@ -50,5 +50,10 @@ namespace WorkerCRM.Data
         public DbSet<Position> Positions { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Comment> Comments { get; set; }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<StatusOrder> StatusOrders { get; set; }
+        public DbSet<ProductInOrder> ProductInOrders { get; set; }
     }
 }

@@ -67,7 +67,12 @@ namespace WorkerCRM
             Services.Infrastructure.AuthorisationConfiguration.Configure(services);
             Services.Infrastructure.SwaggerConfiguration.Configure(services);
 
-          
+            services.AddTransient<IProductListMapper, ProductListMapper>();
+            services.AddTransient<IProductDetailMapper, ProductDetailMapper>();
+            services.AddTransient<IOrderListMapper, OrderListMapper>();
+            services.AddTransient<IOrderDetailMapper, OrderDetailMapper>();
+            services.AddTransient<IProductInOrderListMapper, ProductInOrderListMapper>();
+            services.AddTransient<IProductInOrderDetailMapper, ProductInOrderDetailMapper>();
             services.AddControllers();
           
         }
