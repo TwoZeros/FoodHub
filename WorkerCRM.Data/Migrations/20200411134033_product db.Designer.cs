@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WorkerCRM.Data;
 
 namespace WorkerCRM.Data.Migrations
 {
     [DbContext(typeof(WorkerCRMDbContext))]
-    partial class WorkerCRMDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200411134033_product db")]
+    partial class productdb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -193,12 +195,6 @@ namespace WorkerCRM.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClientId");
-
-                    b.HasIndex("StatusId");
-
-                    b.HasIndex("UserId");
-
                     b.ToTable("Orders");
                 });
 
@@ -263,32 +259,6 @@ namespace WorkerCRM.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("WorkerCRM.Models.ProductInOrder", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<double>("TotalPrice")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
-
-                    b.ToTable("ProductInOrders");
                 });
 
             modelBuilder.Entity("WorkerCRM.Models.StatusOrder", b =>
@@ -366,36 +336,6 @@ namespace WorkerCRM.Data.Migrations
                     b.HasOne("WorkerCRM.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("WorkerCRM.Models.Order", b =>
-                {
-                    b.HasOne("WorkerCRM.Models.Client", "Client")
-                        .WithMany("Orders")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WorkerCRM.Models.StatusOrder", "StatusOrder")
-                        .WithMany("Orders")
-                        .HasForeignKey("StatusId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WorkerCRM.Models.User", "User")
-                        .WithMany("Orders")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("WorkerCRM.Models.ProductInOrder", b =>
-                {
-                    b.HasOne("WorkerCRM.Models.Order", "Order")
-                        .WithMany("ProductInOrders")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

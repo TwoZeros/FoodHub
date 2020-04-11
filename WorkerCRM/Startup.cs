@@ -61,6 +61,12 @@ namespace WorkerCRM
             services.AddTransient<IClientDetailMapper, ClientDetailMapper>();
             services.AddTransient<ICommentListMapper, CommentListMapper>();
             services.AddTransient<ICommentDetailMapper, CommentDetailMapper>();
+            services.AddTransient<IProductListMapper, ProductListMapper>();
+            services.AddTransient<IProductDetailMapper, ProductDetailMapper>();
+            services.AddTransient<IOrderListMapper, OrderListMapper>();
+            services.AddTransient<IOrderDetailMapper, OrderDetailMapper>();
+            services.AddTransient<IProductInOrderListMapper, ProductInOrderListMapper>();
+            services.AddTransient<IProductInOrderDetailMapper, ProductInOrderDetailMapper>();
 
             // Services
             Services.Infrastructure.ContainerConfiguration.Configure(services);

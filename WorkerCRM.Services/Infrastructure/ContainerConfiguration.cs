@@ -20,6 +20,8 @@ namespace WorkerCRM.Services.Infrastructure
             services.AddTransient<IEmployeePositionService, EmployeePositionServices>();
             services.AddTransient<ICommentService, CommentService>();
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IOrderService, OrderService>();
+            services.AddTransient<IProductInOrderService, ProductInOrderService>();
         }
     }
 }

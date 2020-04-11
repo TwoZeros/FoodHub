@@ -4,6 +4,7 @@ using WorkerCRM.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
+
 namespace WorkerCRM.Data.Infrastructure
 {
    public class ContainerConfiguration
@@ -16,6 +17,9 @@ namespace WorkerCRM.Data.Infrastructure
             services.AddTransient<IClientRepository, ClientRepository>();
             services.AddTransient<IEmployeePositionRepository, EployeePositionRepository>();
             services.AddTransient<ICommentRepository, CommentRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IProductInOrderRepository, ProductInOrderRepository>();
         }
     }
 }

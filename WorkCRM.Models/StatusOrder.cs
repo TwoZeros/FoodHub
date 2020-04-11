@@ -5,10 +5,10 @@ using WorkerCRM.Models.Interfaces;
 
 namespace WorkerCRM.Models
 {
-    public class Product : IEntity
+    public class StatusOrder : IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Price { get; set; }
+        public List<Order> Orders { get; set; }
     }
 }

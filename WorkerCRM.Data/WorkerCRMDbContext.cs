@@ -25,12 +25,15 @@ namespace WorkerCRM.Data
             builder.ApplyConfiguration(new ClientConfiguration());
             builder.ApplyConfiguration(new UserConfiguration());
             builder.ApplyConfiguration(new CommentConfiguration());
+            builder.ApplyConfiguration(new ProductConfiguration());
+            builder.ApplyConfiguration(new OrderConfiguration());
+            builder.ApplyConfiguration(new ProductInOrderConfiguration());
             builder.Entity<User>().HasData(
                new User[]
                {
-                new User { Id=1, Login="Admin", Password="12345678",Role="Admin"},
+                    new User { Id=1, Login="Admin", Password="12345678",Role="Admin"},
                });
-            builder.Entity<Position>().HasData(
+                builder.Entity<Position>().HasData(
                new Position[]
                {
                 new Position { Id=1, Name="Директор", IsAllowedDelete=false},
@@ -50,5 +53,8 @@ namespace WorkerCRM.Data
         public DbSet<Client> Clients { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<StatusOrder> StatusOrders { get; set; }
+        public DbSet<ProductInOrder> ProductInOrders { get; set; }
     }
 }
