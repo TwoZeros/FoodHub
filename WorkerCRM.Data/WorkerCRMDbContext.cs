@@ -24,7 +24,7 @@ namespace WorkerCRM.Data
             builder.ApplyConfiguration(new EmployeeConfiguration());
             builder.ApplyConfiguration(new ClientConfiguration());
             builder.ApplyConfiguration(new UserConfiguration());
-
+            builder.ApplyConfiguration(new CommentConfiguration());
             builder.Entity<User>().HasData(
                new User[]
                {
@@ -39,6 +39,8 @@ namespace WorkerCRM.Data
                 new Position { Id=4, Name="Повар", IsAllowedDelete=false},
 
                });
+
+ 
         }
 
         public DbSet<LogEntry> Logs { get; set; }
@@ -47,6 +49,14 @@ namespace WorkerCRM.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Client> Clients { get; set; }
+
         public DbSet<CarmaUser> CarmaUsers { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<StatusOrder> StatusOrders { get; set; }
+        public DbSet<ProductInOrder> ProductInOrders { get; set; }
+
     }
 }

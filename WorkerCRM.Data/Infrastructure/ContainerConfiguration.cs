@@ -15,6 +15,12 @@ namespace WorkerCRM.Data.Infrastructure
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
             services.AddTransient<IClientRepository, ClientRepository>();
             services.AddTransient<ICarmaRepository, CarmaRepository>();
+            services.AddTransient<IEmployeePositionRepository, EployeePositionRepository>();
+            services.AddTransient<ICommentRepository, CommentRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IProductInOrderRepository, ProductInOrderRepository>();
+
         }
     }
 }

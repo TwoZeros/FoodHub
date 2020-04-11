@@ -36,7 +36,6 @@ namespace WorkerCRM.Controllers
 
         // GET: api/Employees/5
         [HttpGet("{id}")]
-        [Authorize]
         public async Task<ActionResult> GetEmployee(int id)
         {
             var employee = await _employeeService.GetById(id);
@@ -51,7 +50,6 @@ namespace WorkerCRM.Controllers
 
         // PUT: api/Employees/5
         [HttpPut("{id}")]
-        [Authorize]
         public async Task<IActionResult> PutEmployee(int id, Employee employee)
         {
             if (id != employee.Id)
@@ -79,7 +77,6 @@ namespace WorkerCRM.Controllers
         }
 
         [HttpPut("{id}/upload-avatar")]
-        [Authorize]
         public async Task<IActionResult> PutEmployeePhoto(int id, Employee employee)
         {
             if (id != employee.Id)
@@ -109,7 +106,6 @@ namespace WorkerCRM.Controllers
         // POST: api/Employees
 
         [HttpPost]
-        [Authorize]
         public async Task<ActionResult<Employee>> PostEmployee(Employee employee)
         {
            await _employeeService.AddEmployee(employee);
@@ -130,7 +126,6 @@ namespace WorkerCRM.Controllers
  
             return new JsonResult(status);
         }
-        [Authorize]
         private bool EmployeeExists(int id)
         {
             return _context.Employees.Any(e => e.Id == id);

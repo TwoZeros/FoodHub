@@ -17,8 +17,7 @@ namespace WorkerCRM.Models
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public DateTime CreatedDate { get; set; }
-
-
-
+        public List<Comment> Comments { get; set; }
+        public List<Order> Orders { get; set; }
     }
 }

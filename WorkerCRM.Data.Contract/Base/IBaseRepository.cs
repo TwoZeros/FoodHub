@@ -9,7 +9,7 @@ namespace WorkerCRM.Data.Contract.Base
 {
     public interface IBaseRepository<TEntity> where TEntity : class, IEntity
     {
-        IQueryable<TEntity> GetAll();
+        List<TEntity> GetAll();
 
         Task<TEntity> GetById(int id);
 
@@ -30,5 +30,6 @@ namespace WorkerCRM.Data.Contract.Base
         IQueryable<TEntity> Query();
 
         Task SaveAsync();
+        
     }
 }
